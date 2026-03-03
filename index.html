@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>VALORIS Auftragsstruktur – Planbare Kundengewinnung</title>
-  <meta name="description" content="VALORIS entwickelt messbare Systeme zur planbaren Generierung kaufbereiter Anfragen – datenbasiert, wirtschaftlich, seriös." />
+
+  <title>VALORIS Auftragsstruktur | Planbar kaufbereite Anfragen für Handwerksbetriebe</title>
+  <meta name="description" content="VALORIS baut Performance-Systeme für Handwerksbetriebe: kaufbereite Anfragen planbar über Google-Suche – messbar bis Kosten pro Kunde." />
 
   <meta property="og:title" content="VALORIS Auftragsstruktur" />
-  <meta property="og:description" content="Planbare Auftragsstruktur statt Zufall – messbar, wirtschaftlich, skalierbar." />
+  <meta property="og:description" content="Planbar kaufbereite Anfragen für Handwerksbetriebe – messbar bis Kosten pro Kunde." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,32 +18,48 @@
 </head>
 
 <body>
-  <!-- Top utility bar -->
-  <div class="topbar">
-    <div class="container topbar__inner">
-      <div class="topbar__left">
-        <span class="topbar__pill">Datenbasiert</span>
-        <span class="topbar__pill">Messbar</span>
-        <span class="topbar__pill">Wirtschaftlich</span>
+  <!-- Topline (minimal, seriös) -->
+  <div class="topline">
+    <div class="container topline__inner">
+      <div class="topline__left">
+        <span class="pill">Performance</span>
+        <span class="pill">Messbar</span>
+        <span class="pill">Handwerk</span>
       </div>
-      <div class="topbar__right">
-        <a class="topbar__link" href="mailto:DEINE-EMAIL@DOMAIN.DE">E-Mail</a>
+      <div class="topline__right">
+        <a class="link" href="mailto:hello@valoris-auftragsstruktur.de">hello@valoris-auftragsstruktur.de</a>
         <span class="sep">•</span>
-        <a class="topbar__link" href="https://wa.me/49DEINENUMMER?text=Hallo%20VALORIS%2C%20ich%20m%C3%B6chte%20eine%20Ersteinsch%C3%A4tzung." target="_blank" rel="noopener">WhatsApp</a>
+        <a class="link" href="https://wa.me/49DEINENUMMER?text=Hallo%20VALORIS%2C%20ich%20m%C3%B6chte%20eine%20kurze%20Performance-Ersteinsch%C3%A4tzung." target="_blank" rel="noopener">WhatsApp</a>
       </div>
     </div>
   </div>
 
+  <!-- Header -->
   <header class="header">
     <div class="container header__inner">
       <a class="brand" href="#top" aria-label="Start">
-        <span class="brand__name">VALORIS</span>
-        <span class="brand__sub">Auftragsstruktur</span>
+        <span class="brand__logo" aria-hidden="true">
+          <!-- Inline SVG Logo (Shield + V) -->
+          <svg width="34" height="34" viewBox="0 0 64 64" role="img" aria-label="VALORIS">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#E0C27A"/>
+                <stop offset="1" stop-color="#B9943F"/>
+              </linearGradient>
+            </defs>
+            <path d="M32 4 52 12v18c0 14-8 24-20 30C20 54 12 44 12 30V12L32 4z" fill="none" stroke="url(#g)" stroke-width="3.2"/>
+            <path d="M20 22l10 24h4l10-24h-5l-7 17-7-17h-5z" fill="url(#g)"/>
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__name">VALORIS</span>
+          <span class="brand__sub">Auftragsstruktur</span>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Hauptnavigation">
         <a href="#system">System</a>
-        <a href="#beweise">Beweise</a>
+        <a href="#kpis">KPIs</a>
         <a href="#ablauf">Ablauf</a>
         <a href="#kontakt" class="btn btn--small">Ersteinschätzung</a>
       </nav>
@@ -54,309 +71,204 @@
 
     <div class="mobile-nav" hidden>
       <a href="#system">System</a>
-      <a href="#beweise">Beweise</a>
+      <a href="#kpis">KPIs</a>
       <a href="#ablauf">Ablauf</a>
       <a href="#kontakt">Ersteinschätzung</a>
     </div>
   </header>
 
-  <!-- Sticky bottom CTA (mobile-first wow) -->
-  <div class="sticky-cta" role="region" aria-label="Schnellkontakt">
-    <a class="sticky-cta__btn sticky-cta__btn--ghost" href="mailto:DEINE-EMAIL@DOMAIN.DE">E-Mail</a>
-    <a class="sticky-cta__btn" href="https://wa.me/49DEINENUMMER?text=Hallo%20VALORIS%2C%20ich%20m%C3%B6chte%20eine%20Ersteinsch%C3%A4tzung." target="_blank" rel="noopener">WhatsApp</a>
+  <!-- Sticky CTA (mobile) -->
+  <div class="sticky">
+    <a class="sticky__btn sticky__btn--ghost" href="mailto:hello@valoris-auftragsstruktur.de">E-Mail</a>
+    <a class="sticky__btn" href="https://wa.me/49DEINENUMMER?text=Hallo%20VALORIS%2C%20ich%20m%C3%B6chte%20eine%20kurze%20Performance-Ersteinsch%C3%A4tzung." target="_blank" rel="noopener">WhatsApp</a>
   </div>
 
   <main id="top">
-    <!-- HERO -->
+    <!-- HERO (kurz, dominant) -->
     <section class="hero">
       <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="badge">Boutique-Performanceberatung für planbare Kundengewinnung</p>
-          <h1>Planbare Auftragsstruktur statt Zufall.</h1>
+        <div class="hero__left">
+          <p class="badge">Performance-Systeme für Handwerksbetriebe</p>
+          <h1>Planbar kaufbereite Anfragen.<br><span class="h1-accent">Messbar bis Kosten pro Kunde.</span></h1>
           <p class="lead">
-            VALORIS entwickelt messbare Systeme zur planbaren Generierung kaufbereiter Anfragen –
-            mit klarer Zahlenlogik, sauberer Struktur und konsequenter Optimierung.
+            Keine Marketing-Show. VALORIS baut eine saubere Google-Suchstruktur (Ads + Landingpage + Tracking),
+            damit du Nachfrage steuerst statt hoffst.
           </p>
 
-          <div class="hero__cta">
+          <div class="cta">
             <a class="btn" href="#kontakt">Kostenfreie Ersteinschätzung</a>
-            <a class="btn btn--ghost" href="#system">Wie das System funktioniert</a>
+            <a class="btn btn--ghost" href="#system">System ansehen</a>
           </div>
 
-          <div class="metrics">
-            <div class="metric">
-              <div class="metric__kpi">KPI</div>
-              <div class="metric__label">Kosten pro Anfrage / Kunde</div>
+          <div class="kpi-strip" aria-label="Key Performance Indicators">
+            <div class="kpi">
+              <div class="kpi__top">CPA</div>
+              <div class="kpi__bottom">Kosten pro Kunde</div>
             </div>
-            <div class="metric">
-              <div class="metric__kpi">CTR</div>
-              <div class="metric__label">Qualität & Relevanz der Nachfrage</div>
+            <div class="kpi">
+              <div class="kpi__top">CVR</div>
+              <div class="kpi__bottom">Conversion Landingpage</div>
             </div>
-            <div class="metric">
-              <div class="metric__kpi">CVR</div>
-              <div class="metric__label">Conversion über Struktur & Vertrauen</div>
-            </div>
-          </div>
-
-          <div class="quote">
-            <div class="quote__mark">“</div>
-            <div class="quote__text">
-              Nicht mehr „Marketing“. Sondern Entscheidungen auf Basis von Zahlen.
-              Ziel: bessere Anfragen, weniger Streuverlust, planbare Auslastung.
+            <div class="kpi">
+              <div class="kpi__top">Intent</div>
+              <div class="kpi__bottom">Käufer-Keywords</div>
             </div>
           </div>
         </div>
 
-        <div class="hero__card">
-          <div class="card card--tight">
-            <h3>Was VALORIS konkret liefert</h3>
+        <aside class="hero__right">
+          <div class="box">
+            <h3>Was du bekommst (kurz)</h3>
             <ul class="list">
-              <li><span class="dot"></span><strong>Nachfrage-Architektur</strong> (kaufbereite Keywords, Cluster, Intention)</li>
-              <li><span class="dot"></span><strong>Conversion-Struktur</strong> (Landingpage, Copy, Vertrauensaufbau)</li>
-              <li><span class="dot"></span><strong>Tracking</strong> (Form, Call, WhatsApp, klare KPIs)</li>
-              <li><span class="dot"></span><strong>Google Ads Struktur</strong> (Kontrolle, Negatives, sauberes Setup)</li>
-              <li><span class="dot"></span><strong>Optimierung</strong> (Kosten pro Kunde runter, Qualität rauf)</li>
+              <li><span class="dot"></span>Keyword-Cluster nach Kaufintention</li>
+              <li><span class="dot"></span>Landingpage-Struktur, die abschließt</li>
+              <li><span class="dot"></span>Tracking: Formular / Anruf / WhatsApp</li>
+              <li><span class="dot"></span>Google Ads Setup inkl. Negatives</li>
+              <li><span class="dot"></span>Optimierung auf CPA (nicht auf Klicks)</li>
             </ul>
-
-            <div class="card__meta">
-              <span class="tag">Messbar statt Bauchgefühl</span>
-              <span class="tag">Wirtschaftlich statt „Reichweite“</span>
-              <span class="tag">Struktur statt Zufall</span>
-            </div>
-
-            <div class="mini-cta">
-              <a class="btn btn--full" href="#kontakt">Ersteinschätzung sichern</a>
-              <p class="muted small">Antwort in der Regel &lt; 24h • E-Mail oder WhatsApp</p>
+            <div class="box__mini">
+              <span class="mini">Fokus: Handwerk</span>
+              <span class="mini">Messbar</span>
+              <span class="mini">Performance</span>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
 
-      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="glow" aria-hidden="true"></div>
     </section>
 
-    <!-- WHY -->
-    <section class="section">
+    <!-- SYSTEM (minimal: 3 Karten) -->
+    <section id="system" class="section">
       <div class="container">
-        <div class="split">
-          <div>
-            <h2>Warum viele Betriebe online Geld verbrennen.</h2>
-            <p class="muted">
-              Nicht weil „Google Ads nicht funktioniert“, sondern weil Struktur fehlt:
-              falsche Keywords, keine Landingpage-Logik, kein Tracking, keine Optimierung.
-            </p>
-
-            <div class="bullets">
-              <div class="bullet"><span class="bullet__icon">01</span><span>Falsche Intention: Infosuchende statt Käufer</span></div>
-              <div class="bullet"><span class="bullet__icon">02</span><span>Startseite statt Landingpage (Conversion-Killer)</span></div>
-              <div class="bullet"><span class="bullet__icon">03</span><span>Keine Messung: Entscheidungen ohne Daten</span></div>
-            </div>
-          </div>
-
-          <div class="panel">
-            <h3>VALORIS Prinzip</h3>
-            <p class="muted">
-              Wir bauen ein System, das du steuern kannst:
-              <strong>Traffic → Conversion → Wirtschaftlichkeit</strong>.
-            </p>
-            <div class="mini-grid">
-              <div class="mini">
-                <div class="mini__title">Traffic</div>
-                <div class="mini__text">kaufbereite Suchanfragen</div>
-              </div>
-              <div class="mini">
-                <div class="mini__title">Conversion</div>
-                <div class="mini__text">Struktur + Vertrauen</div>
-              </div>
-              <div class="mini">
-                <div class="mini__title">ROI</div>
-                <div class="mini__text">Kosten pro Kunde im Griff</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SYSTEM -->
-    <section id="system" class="section section--dark">
-      <div class="container">
-        <div class="section__head">
+        <div class="head">
           <h2>Das System</h2>
-          <p class="muted">3 Module. Klarer Output. Kein Agentur-Nebel.</p>
+          <p class="muted">3 Bausteine. Sauber. Steuerbar. Ohne Overload.</p>
         </div>
 
         <div class="cards">
-          <article class="card card--lift">
-            <h3>1) Analyse & Struktur</h3>
-            <p class="muted">Nachfrage, Wettbewerb, Zahlenlogik – wir definieren, was sich rechnet.</p>
+          <article class="card">
+            <h3>1) Nachfrage-Logik</h3>
+            <p class="muted">Wir kaufen Intention – nicht Reichweite.</p>
             <ul class="list list--compact">
-              <li><span class="dot"></span>Keyword-Cluster & Intention</li>
-              <li><span class="dot"></span>Wirtschaftlichkeits-Formel (CPC/CVR/Close/AOV)</li>
-              <li><span class="dot"></span>Tracking-Plan (Events & KPIs)</li>
+              <li><span class="dot"></span>„Kosten / Preis / in [Stadt]“</li>
+              <li><span class="dot"></span>Cluster + Negatives</li>
+              <li><span class="dot"></span>Wettbewerb & CPC-Realität</li>
             </ul>
           </article>
 
-          <article class="card card--lift">
-            <h3>2) Systemaufbau</h3>
-            <p class="muted">Landingpage, Tracking, Ads-Struktur – so, dass du Kontrolle hast.</p>
+          <article class="card">
+            <h3>2) Conversion-Struktur</h3>
+            <p class="muted">Landingpage, die Vertrauen aufbaut und führt.</p>
             <ul class="list list--compact">
-              <li><span class="dot"></span>Conversion-Copy & Angebotslogik</li>
-              <li><span class="dot"></span>Form/Call/WhatsApp Tracking</li>
-              <li><span class="dot"></span>Google Ads Struktur + Negatives</li>
+              <li><span class="dot"></span>klare Leistung & Ablauf</li>
+              <li><span class="dot"></span>Einwand-Reduktion</li>
+              <li><span class="dot"></span>dominanter CTA</li>
             </ul>
           </article>
 
-          <article class="card card--lift">
-            <h3>3) Optimierung & Führung</h3>
-            <p class="muted">Kontinuierliche Verbesserung – Entscheidungen auf Datenbasis.</p>
+          <article class="card">
+            <h3>3) Tracking & Steuerung</h3>
+            <p class="muted">Entscheidungen auf Zahlen, nicht Gefühl.</p>
             <ul class="list list--compact">
-              <li><span class="dot"></span>Kosten pro Anfrage/Kunde optimieren</li>
-              <li><span class="dot"></span>Qualität der Anfragen erhöhen</li>
-              <li><span class="dot"></span>Monatliches Reporting</li>
+              <li><span class="dot"></span>Form / Call / WhatsApp Events</li>
+              <li><span class="dot"></span>CPA-Fokus (Kosten pro Kunde)</li>
+              <li><span class="dot"></span>Reporting in Klartext</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- PROOF / BEWEISE -->
-    <section id="beweise" class="section">
+    <!-- KPI / BEWEIS (sehr reduziert, dafür scharf) -->
+    <section id="kpis" class="section section--dark">
       <div class="container">
-        <div class="section__head">
+        <div class="head">
           <h2>Woran du Qualität erkennst</h2>
-          <p class="muted">Wenn du „wow, der weiß wovon er redet“ auslösen willst: klare Kriterien, klare Zahlen.</p>
+          <p class="muted">Wenn diese Punkte fehlen, verbrennt dein Betrieb Budget.</p>
         </div>
 
-        <div class="proof-grid">
-          <div class="proof">
-            <h3>Messpunkte statt Meinung</h3>
-            <p class="muted">Formular, Anruf, WhatsApp – alles wird messbar gemacht. Keine Blackbox.</p>
-            <div class="proof__chips">
-              <span class="chip">Form Submit</span>
-              <span class="chip">Call Click</span>
-              <span class="chip">WhatsApp Click</span>
-            </div>
-          </div>
-          <div class="proof">
-            <h3>Intent-Keywords</h3>
-            <p class="muted">Wir kaufen nicht „Traffic“, wir kaufen kaufbereite Intention.</p>
-            <div class="proof__chips">
-              <span class="chip">„Kosten“</span>
-              <span class="chip">„Preis“</span>
-              <span class="chip">„in [Stadt]“</span>
-            </div>
-          </div>
-          <div class="proof">
-            <h3>Wirtschaftlichkeit</h3>
-            <p class="muted">Entscheidend ist Kosten pro Kunde – nicht Klicks und Impressionen.</p>
-            <div class="proof__chips">
-              <span class="chip">CPC</span>
-              <span class="chip">CVR</span>
-              <span class="chip">CPA</span>
-            </div>
-          </div>
+        <div class="checks">
+          <div class="check"><span class="check__mark">✓</span><span>Messung von <strong>Formular</strong>, <strong>Anruf</strong> und <strong>WhatsApp</strong></span></div>
+          <div class="check"><span class="check__mark">✓</span><span>Keywords nach <strong>Kaufintention</strong> (nicht „Info-Suchende“)</span></div>
+          <div class="check"><span class="check__mark">✓</span><span>Optimierung auf <strong>CPA / Kosten pro Kunde</strong> (nicht Klick-Zahlen)</span></div>
+          <div class="check"><span class="check__mark">✓</span><span>Saubere <strong>Negativ-Keyword</strong> Strategie gegen Streuverlust</span></div>
         </div>
 
-        <div class="case">
-          <div class="case__left">
-            <h3>Mini-Logik (so denken wir)</h3>
-            <p class="muted">
-              Wenn CPC steigt, ist das nicht automatisch schlecht. Entscheidend ist, ob Conversion und Abschluss
-              das kompensieren. Wir optimieren die Stellhebel, die kontrollierbar sind.
-            </p>
+        <div class="formula">
+          <div class="formula__title">VALORIS-Formel (einfach):</div>
+          <div class="formula__line">
+            <span class="chip">CPC</span>
+            <span class="op">×</span>
+            <span class="chip">1 / CVR</span>
+            <span class="op">×</span>
+            <span class="chip">1 / Close</span>
+            <span class="op">=</span>
+            <span class="chip chip--gold">Kosten pro Kunde</span>
           </div>
-          <div class="case__right">
-            <div class="case__stat">
-              <div class="case__k">Hebel 1</div>
-              <div class="case__v">Conversion</div>
-              <div class="case__t">Struktur + Vertrauen</div>
-            </div>
-            <div class="case__stat">
-              <div class="case__k">Hebel 2</div>
-              <div class="case__v">Keyword-Intention</div>
-              <div class="case__t">Käufer statt Leser</div>
-            </div>
-            <div class="case__stat">
-              <div class="case__k">Hebel 3</div>
-              <div class="case__v">Tracking</div>
-              <div class="case__t">Messbar statt Meinung</div>
-            </div>
-          </div>
+          <div class="muted small">Wir optimieren die Hebel, die du kontrollieren kannst: Intention, Landingpage, Tracking, Struktur.</div>
         </div>
       </div>
     </section>
 
-    <!-- ABLAUF -->
-    <section id="ablauf" class="section section--dark">
+    <!-- ABLAUF (3 Schritte, nicht 4+) -->
+    <section id="ablauf" class="section">
       <div class="container">
-        <div class="section__head">
+        <div class="head">
           <h2>Ablauf</h2>
-          <p class="muted">Klar, kurz, führend.</p>
+          <p class="muted">Kurz. Führend. Umsetzbar.</p>
         </div>
 
         <div class="steps">
           <div class="step">
             <div class="step__nr">01</div>
-            <div class="step__body">
+            <div>
               <h3>Ersteinschätzung</h3>
-              <p class="muted">Ziel, Branche, Region, Kapazität. Wir prüfen Hebel & Machbarkeit.</p>
+              <p class="muted">Branche, Region, Kapazität, Ziel – wir prüfen Machbarkeit und Hebel.</p>
             </div>
           </div>
+
           <div class="step">
             <div class="step__nr">02</div>
-            <div class="step__body">
-              <h3>Strukturplan</h3>
-              <p class="muted">Nachfrage-Logik, Funnel, Messpunkte – du siehst, was wir warum tun.</p>
+            <div>
+              <h3>Setup</h3>
+              <p class="muted">Landingpage + Tracking + Ads-Struktur. Sauber, messbar, kontrollierbar.</p>
             </div>
           </div>
+
           <div class="step">
             <div class="step__nr">03</div>
-            <div class="step__body">
-              <h3>Systemaufbau</h3>
-              <p class="muted">Landingpage, Tracking, Ads-Struktur. Schlank starten, sauber bauen.</p>
-            </div>
-          </div>
-          <div class="step">
-            <div class="step__nr">04</div>
-            <div class="step__body">
+            <div>
               <h3>Optimierung</h3>
-              <p class="muted">Kosten pro Anfrage/Kunde runter, Qualität rauf – datenbasiert.</p>
+              <p class="muted">CPA runter, Qualität rauf – auf Zahlenbasis, ohne Aktionismus.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- KONTAKT -->
-    <section id="kontakt" class="section">
+    <!-- KONTAKT (Netlify Forms, minimal) -->
+    <section id="kontakt" class="section section--dark">
       <div class="container">
         <div class="contact">
-          <div class="contact__text">
-            <h2>Kostenfreie Ersteinschätzung</h2>
+          <div class="contact__left">
+            <h2>Ersteinschätzung</h2>
             <p class="muted">
-              Kurze Angaben reichen. Du erhältst eine klare Einschätzung (Hebel, Aufwand, nächster Schritt).
+              Kurze Angaben reichen. Du bekommst eine klare Einschätzung (Hebel, Aufwand, nächster Schritt).
             </p>
 
-            <div class="contact__actions">
-              <a class="btn btn--ghost" href="mailto:DEINE-EMAIL@DOMAIN.DE">Per E-Mail</a>
-              <a class="btn" href="https://wa.me/49DEINENUMMER?text=Hallo%20VALORIS%2C%20ich%20m%C3%B6chte%20eine%20Ersteinsch%C3%A4tzung." target="_blank" rel="noopener">Per WhatsApp</a>
+            <div class="contact__cta">
+              <a class="btn btn--ghost" href="mailto:hello@valoris-auftragsstruktur.de">E-Mail</a>
+              <a class="btn" href="https://wa.me/49DEINENUMMER?text=Hallo%20VALORIS%2C%20ich%20m%C3%B6chte%20eine%20kurze%20Performance-Ersteinsch%C3%A4tzung." target="_blank" rel="noopener">WhatsApp</a>
             </div>
 
-            <div class="contact__meta">
-              <div class="meta">
-                <div class="meta__k">Antwortzeit</div>
-                <div class="meta__v">in der Regel &lt; 24h</div>
-              </div>
-              <div class="meta">
-                <div class="meta__k">Format</div>
-                <div class="meta__v">Telefon / WhatsApp / E-Mail</div>
-              </div>
+            <div class="note">
+              <span class="note__dot"></span>
+              <span class="muted small">Fokus: Handwerk. Klarer Performance-Ansatz. Keine Erfolgsgarantie, aber messbare Steuerung.</span>
             </div>
           </div>
 
-          <!-- Netlify Forms -->
-          <form class="form" id="leadForm"
+          <form class="form"
                 name="ersteinschaetzung"
                 method="POST"
                 data-netlify="true"
@@ -368,31 +280,29 @@
               <label>Don’t fill this out: <input name="bot-field" /></label>
             </p>
 
-            <div class="form__row">
-              <label>
-                <span>Name</span>
-                <input name="name" autocomplete="name" required placeholder="Vorname Nachname" />
-              </label>
-              <label>
-                <span>Unternehmen</span>
-                <input name="company" required placeholder="Firma / Branche" />
-              </label>
-            </div>
-
-            <div class="form__row">
-              <label>
-                <span>E-Mail</span>
-                <input name="email" type="email" autocomplete="email" required placeholder="name@firma.de" />
-              </label>
-              <label>
-                <span>Telefon (optional)</span>
-                <input name="phone" autocomplete="tel" placeholder="+49 ..." />
-              </label>
-            </div>
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" required placeholder="Vorname Nachname" />
+            </label>
 
             <label>
-              <span>Worum geht’s?</span>
-              <textarea name="message" rows="5" required placeholder="Branche, Region, aktueller Stand, Wunschziel …"></textarea>
+              <span>Firma / Gewerk</span>
+              <input name="company" required placeholder="z. B. Dachdecker, SHK, GaLaBau ..." />
+            </label>
+
+            <label>
+              <span>E-Mail</span>
+              <input name="email" type="email" autocomplete="email" required placeholder="name@firma.de" />
+            </label>
+
+            <label>
+              <span>Region</span>
+              <input name="region" required placeholder="z. B. Leipzig + 30 km" />
+            </label>
+
+            <label>
+              <span>Ziel</span>
+              <textarea name="message" rows="4" required placeholder="Welche Aufträge willst du mehr? (kurz)"></textarea>
             </label>
 
             <label class="consent">
@@ -403,7 +313,7 @@
               </span>
             </label>
 
-            <button class="btn btn--full" type="submit">Ersteinschätzung anfragen</button>
+            <button class="btn btn--full" type="submit">Anfrage senden</button>
             <p class="muted small" id="formStatus" aria-live="polite"></p>
           </form>
         </div>
@@ -413,14 +323,11 @@
 
   <footer class="footer">
     <div class="container footer__inner">
-      <div class="footer__left">
+      <div>
         <div class="footer__brand">VALORIS Auftragsstruktur</div>
-        <div class="footer__note">Messbare Systeme zur wirtschaftlichen Kundengewinnung.</div>
+        <div class="muted small">Planbar kaufbereite Anfragen für Handwerksbetriebe – messbar bis Kosten pro Kunde.</div>
       </div>
-
-      <div class="footer__right">
-        <a href="#top">Nach oben</a>
-        <span class="sep">•</span>
+      <div class="footer__links">
         <a href="/impressum.html">Impressum</a>
         <span class="sep">•</span>
         <a href="/datenschutz.html">Datenschutz</a>
